@@ -1,3 +1,5 @@
+import 'package:clock_app/screens/countdown_watch.dart';
+import 'package:clock_app/screens/stop_watch.dart';
 import 'package:clock_app/screens/ui_page.dart';
 import 'package:flutter/material.dart';
 
@@ -16,6 +18,8 @@ class MyApp extends StatelessWidget {
       debugShowCheckedModeBanner: false,
       routes: {
         '/': (context) => const ClockPage(),
+        'stop_watch': (context) => const StopWatch(),
+        'countdown_watch': (context) => const CountdownTimer(),
       },
     );
   }

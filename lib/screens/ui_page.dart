@@ -53,6 +53,26 @@ class _ClockPageState extends State<ClockPage> {
           'Clock App',
           style: TextStyle(fontWeight: FontWeight.bold),
         ),
+        actions: [
+          IconButton(
+            onPressed: () {
+              Navigator.of(context).pushNamed('stop_watch');
+            },
+            icon: const Icon(
+              Icons.watch_later_rounded,
+              color: Colors.black,
+            ),
+          ),
+          IconButton(
+            onPressed: () {
+              Navigator.pushNamed(context, 'countdown_watch');
+            },
+            icon: const Icon(
+              Icons.timer_rounded,
+              color: Colors.black,
+            ),
+          ),
+        ],
       ),
       drawer: Drawer(
         child: Column(

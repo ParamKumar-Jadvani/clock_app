@@ -6,6 +6,6 @@ extension MySize on int {
       );
 
   SizedBox get w => SizedBox(
-        height: toDouble(),
+        width: toDouble(), // Corrected width here
       );
 }
